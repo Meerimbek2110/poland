@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LiaShoppingBasketSolid } from "react-icons/lia";
+// import { LiaShoppingBasketSolid } from "react-icons/lia";
 
 // Замените эти пути на реальные пути к вашим изображениям
 import buterbrod1 from "../../assets/Buterbrody1.jpg"; 
@@ -96,7 +96,7 @@ function Buter() {
             <div className="gorbluda-footer">
               <span className="gorbluda-price">{buterbrod.price} ₽</span>
               <button className="gorbluda-btn">
-                <LiaShoppingBasketSolid className="basket-icon" />
+                {/* <LiaShoppingBasketSolid className="basket-icon" /> */}
               </button>
             </div>
           </div>
