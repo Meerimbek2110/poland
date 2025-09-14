@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import fire from '../../assets/fire.png'
 import Logo from '../../assets/Logo (1).svg'
 // import { IoIosSearch } from "react-icons/io";
-import { GoPerson } from "react-icons/go";
+// import { GoPerson } from "react-icons/go";
 // import { LiaShoppingBasketSolid } from "react-icons/Lia";
 import './header.css'
 import { Link } from "react-router-dom";
@@ -73,7 +73,7 @@ function Header() {
                             </Link>
                             <Link to="/profile\">
                                 <div className="icon">
-                                    <GoPerson className='icon-react' />
+                                    {/* <GoPerson className='icon-react' /> */}
                                 </div>
                             </Link>
                             <Link to="CardPage">
