@@ -71,7 +71,7 @@ function Header() {
                                     <IoIosSearch className='icon-react' />
                                 </div>
                             </Link>
-                            <Link to="/profile\">
+                            <Link to="">
                                 <div className="icon">
                                     <GoPerson className='icon-react' />
                                 </div>

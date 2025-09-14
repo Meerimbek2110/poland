@@ -53,7 +53,7 @@ function Home() {
       
       <div className="losos-shop">
           <h1>1200 ₽</h1>
-          {/* <LiaShoppingBasketSolid className='losos-img' /> */}
+          <LiaShoppingBasketSolid className='losos-img' />
         </div>
     </div>
   </div>
