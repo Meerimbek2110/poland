@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 import gorbluda1 from "../../assets/gorbluda1.png";
 import gorbluda2 from "../../assets/gorbluda2.png";

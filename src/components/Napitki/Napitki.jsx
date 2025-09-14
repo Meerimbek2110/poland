@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 // Короткие имена файлов для изображений напитков
 import drink1 from "../../assets/drink1.jpg";

@@ -13,10 +13,7 @@ import aksia7 from '../../assets/aksia7.png'
 import aksia8 from '../../assets/aksia8.png'
 import aksia9 from '../../assets/aksia9.png'
 import aksia10 from '../../assets/aksia10.png'
-import aksia11 from '../../assets/aksia11.jpg'
-import aksia12 from '../../assets/aksia12.jpg'
-import aksia13 from '../../assets/aksia13.jpg'
-import aksia14 from '../../assets/aksia14.jpg'
+
 
 const Categories = [
   {
