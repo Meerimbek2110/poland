@@ -10,7 +10,7 @@ import './home.css'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Slider from '../slider/Slider';
-import Product from '../product/Product';
+import Product from '../Product/Product';
 
 
 
