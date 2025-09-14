@@ -3,7 +3,7 @@ import Tochka1 from '../../assets/Union.svg'
 import header from '../../assets/header.jpg'
 import redcap from '../../assets/Group 3.svg'
 import Tochka2 from '../../assets/Union.png'
-// import { LiaShoppingBasketSolid } from "react-icons/Lia";
+import { LiaShoppingBasketSolid } from "react-icons/lia";
 import tiramisu from '../../assets/hame.png'
 import './home.css'
 
