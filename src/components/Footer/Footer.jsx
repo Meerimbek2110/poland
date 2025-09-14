@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../assets/Logo (1).svg'
 import './footer.css'
+import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <div className='footer'>
@@ -9,7 +10,7 @@ function Footer() {
         <div className="foot-ctl">
           <ul>
             <li>
-              <a href="">Обратная связь </a>
+              <Link to="Contact">Обратная связь </Link>
             </li>
             <li>
               <a href="">Доставка</a>
