@@ -3,7 +3,7 @@ import fire from '../../assets/fire.png'
 import Logo from '../../assets/Logo (1).svg'
 import { IoIosSearch } from "react-icons/io";
 import { GoPerson } from "react-icons/go";
-import { LiaShoppingBasketSolid } from "react-icons/Lia";
+// import { LiaShoppingBasketSolid } from "react-icons/Lia";
 import './header.css'
 import { Link } from "react-router-dom";
 
@@ -78,7 +78,7 @@ function Header() {
                             </Link>
                             <Link to="CardPage">
                                 <div className="icon">
-                                    <LiaShoppingBasketSolid className='icon-react' />
+                                    {/* <LiaShoppingBasketSolid className='icon-react' /> */}
                                     {/* <div className="count">{length}</div> */}
                                 </div>
                             </Link>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './product.css';
-import { LiaShoppingBasketSolid } from "react-icons/Lia";
+// import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 const Product = ({ data }) => {
   return (
@@ -16,7 +16,7 @@ const Product = ({ data }) => {
             <h3 className="old-price">{data.oldPrice} ₽</h3>
 <div className="popular-pay">
   <h1>{data.price} ₽</h1>
-  <LiaShoppingBasketSolid className='shop-img' />
+  {/* <LiaShoppingBasketSolid className='shop-img' /> */}
 </div>
 
         </div>

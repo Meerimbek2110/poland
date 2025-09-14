@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LiaShoppingBasketSolid } from "react-icons/Lia";
+// import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 
 import hink1 from "../../assets/hinkalo.png";
@@ -94,7 +94,7 @@ function Hinkali() {
             <div className="gorbluda-footer">
               <span className="gorbluda-price">{dish.price} ₽</span>
               <button className="gorbluda-btn">
-                <LiaShoppingBasketSolid className="basket-icon" />
+                {/* <LiaShoppingBasketSolid className="basket-icon" /> */}
               </button>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LiaShoppingBasketSolid } from "react-icons/Lia";
+// import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 import gorbluda1 from "../../assets/gorbluda1.png";
 import gorbluda2 from "../../assets/gorbluda2.png";
@@ -96,7 +96,7 @@ function Gorbluda() {
             <div className="gorbluda-footer">
               <span className="gorbluda-price">{dish.price} ₽</span>
               <button className="gorbluda-btn">
-                <LiaShoppingBasketSolid className="basket-icon" />
+                {/* <LiaShoppingBasketSolid className="basket-icon" /> */}
               </button>
             </div>
           </div>
