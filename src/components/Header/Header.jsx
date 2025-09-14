@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import fire from '../../assets/fire.png'
 import Logo from '../../assets/Logo (1).svg'
-import { IoIosSearch } from "react-icons/io";
+// import { IoIosSearch } from "react-icons/io";
 import { GoPerson } from "react-icons/go";
 // import { LiaShoppingBasketSolid } from "react-icons/Lia";
 import './header.css'
@@ -68,7 +68,7 @@ function Header() {
                         <div className="icons">
                             <Link to="">
                                 <div className="icon">
-                                    <IoIosSearch className='icon-react' />
+                                    {/* <IoIosSearch className='icon-react' /> */}
                                 </div>
                             </Link>
                             <Link to="/profile\">
