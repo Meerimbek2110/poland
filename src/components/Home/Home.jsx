@@ -3,7 +3,7 @@ import Tochka1 from '../../assets/Union.svg'
 import header from '../../assets/header.jpg'
 import redcap from '../../assets/Group 3.svg'
 import Tochka2 from '../../assets/Union.png'
-import { LiaShoppingBasketSolid } from "react-icons/Lia";
+// import { LiaShoppingBasketSolid } from "react-icons/Lia";
 import tiramisu from '../../assets/hame.png'
 import './home.css'
 
@@ -53,7 +53,7 @@ function Home() {
       
       <div className="losos-shop">
           <h1>1200 ₽</h1>
-          <LiaShoppingBasketSolid className='losos-img' />
+          {/* <LiaShoppingBasketSolid className='losos-img' /> */}
         </div>
     </div>
   </div>
