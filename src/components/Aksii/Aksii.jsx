@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { LiaShoppingBasketSolid } from "react-icons/lia";
 
 // Замените эти пути на реальные пути к вашим изображениям пицц
 import pizza1 from "../../assets/pizza1.jpg";
@@ -82,7 +82,7 @@ function Aksii() {
                 <span className="gorbluda-price">{item.price} ₽</span>
               </div>
               <button className="gorbluda-btn">
-                {/* <LiaShoppingBasketSolid className="basket-icon" /> */}
+                <LiaShoppingBasketSolid className="basket-icon" />
               </button>
             </div>
           </div>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import fire from '../../assets/fire.png'
 import Logo from '../../assets/Logo (1).svg'
-// import { IoIosSearch } from "react-icons/io";
-// import { GoPerson } from "react-icons/go";
-// import { LiaShoppingBasketSolid } from "react-icons/Lia";
+import { IoIosSearch } from "react-icons/io";
+import { GoPerson } from "react-icons/go";
+import { LiaShoppingBasketSolid } from "react-icons/lia";
 import './header.css'
 import { Link } from "react-router-dom";
 
@@ -68,17 +68,17 @@ function Header() {
                         <div className="icons">
                             <Link to="">
                                 <div className="icon">
-                                    {/* <IoIosSearch className='icon-react' /> */}
+                                    <IoIosSearch className='icon-react' />
                                 </div>
                             </Link>
                             <Link to="/profile\">
                                 <div className="icon">
-                                    {/* <GoPerson className='icon-react' /> */}
+                                    <GoPerson className='icon-react' />
                                 </div>
                             </Link>
                             <Link to="CardPage">
                                 <div className="icon">
-                                    {/* <LiaShoppingBasketSolid className='icon-react' /> */}
+                                    <LiaShoppingBasketSolid className='icon-react' />
                                     {/* <div className="count">{length}</div> */}
                                 </div>
                             </Link>
