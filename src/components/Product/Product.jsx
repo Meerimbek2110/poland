@@ -1,6 +1,6 @@
 import React from 'react';
 import './product.css';
-import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 const Product = ({ data }) => {
   return (
