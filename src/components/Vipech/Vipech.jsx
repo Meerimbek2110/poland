@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LiaShoppingBasketSolid } from "react-icons/Lia";
+// import { LiaShoppingBasketSolid } from "react-icons/Lia";
 
 // Короткие имена файлов, как вы и просили
 import vipech1 from "../../assets/vipech1.jpg";
@@ -96,7 +96,7 @@ function Vipech() {
             <div className="gorbluda-footer">
               <span className="gorbluda-price">{item.price} ₽</span>
               <button className="gorbluda-btn">
-                <LiaShoppingBasketSolid className="basket-icon" />
+                {/* <LiaShoppingBasketSolid className="basket-icon" /> */}
               </button>
             </div>
           </div>
