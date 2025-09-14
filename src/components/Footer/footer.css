@@ -1,0 +1,46 @@
+.footer{
+    max-width: 1600px;
+    margin: auto;
+    height: 200px;
+    background-color: black;
+    color: white;
+}
+.foot{
+    display: flex;
+    gap: 200px;
+    
+}
+.foot img{
+    margin-top: 20px;
+}
+.foot-ctl ul{
+    display: flex;
+    gap: 45px;
+    color: white;
+    margin-top: 20px;
+
+}
+.foot-ctl ul li{
+    color: white;
+    list-style: none;
+}
+.foot-ctl ul li a{
+    color: white;
+    list-style: none;
+}
+.foot-contact{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px ;
+    
+}
+.foot-contact .gmail{
+    margin-top: 8px;
+}
+.foot-cnt{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}

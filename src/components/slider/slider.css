@@ -1,0 +1,140 @@
+/* ... Остальные стили ... */
+.menu-container {
+  background: #000000;
+  color: white;
+  padding: 20px;
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.arrows {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  gap: 10px;
+  
+
+}
+
+.arrow-btn {
+  background: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 300px;
+}
+
+.arrow-btn.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.slider {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  height: 350px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* ... Остальные стили ... */
+
+.card {
+  flex: 0 0 300px;
+  background: #000;
+  
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: none solid transparent;
+  transition: border 0.3s;
+  
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  background: #000;
+  color: white;
+}
+
+/* Стили для обрезанных картинок */
+.half-img {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.half-img img {
+  width: 100%;
+  height: 100%; /* Занимает 100% высоты контейнера */
+  object-fit: cover; /* Заполняет контейнер, сохраняя пропорции */
+  display: block;
+  background-color: #000;
+}
+
+.top-half img {
+  object-position: top;
+}
+
+.bottom-half img {
+  object-position: bottom;
+}
+
+.red-card {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-card .promo {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+}
+
+/* Эффект при наведении на карточку */
+.card:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  
+  
+}
+
+
+/* Добавляем плавный переход для всех изменений */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  
+}
+
+.card .title {
+  transition: background 0.3s ease;
+}
+
+.half-img {
+  transition: background 0.3s ease;
+}

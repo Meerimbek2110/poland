@@ -1,0 +1,121 @@
+/* Контейнер карточки */
+.popular {
+  background: #000000;
+  
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popular:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+/* Внутренняя часть карточки */
+.popular-zam {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* Заголовок "Популярные блюда" */
+
+
+
+
+/* Фото */
+.popular img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* border-bottom: 1px solid #eee; */
+}
+
+/* Контент */
+.popular-eat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  flex: 1;
+}
+
+/* Название блюда */
+.popular-eat h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Вес */
+.popular-eat h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  opacity: 80%;
+  margin: 0;
+  width: 40px;
+  height: 20px;
+  
+  
+
+}
+
+/* Описание */
+.popular-eat h4 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  opacity: 80%;
+  margin: 0;
+  min-height: 32px; /* чтобы карточки были одинаковыми */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Старая цена */
+.popular-eat h3.old-price {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 1);
+  opacity: 80%;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Блок цены и корзины */
+.popular-pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* Новая цена */
+.popular-pay h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Корзина */
+.shop-img {
+  font-size: 26px;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.shop-img:hover {
+  color: #e05200;
+}
+
+/* Сетка карточек */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+}

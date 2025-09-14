@@ -1,0 +1,226 @@
+/* .header{
+    max-width: 1600px;
+    margin: auto;
+    height: 120px;
+}
+.header-zam{
+    background: linear-gradient(to right, #09234E 40%, #000000 100%);
+
+}
+.header-menu{
+    display: flex;
+    justify-content: center;
+
+}
+.header-comp{
+    display: flex;
+} */
+
+/* Общие стили для всего хедера */
+.header {
+    width: 100%;
+    padding: 20px 0;
+    /* Отступы сверху и снизу */
+    background: linear-gradient(120deg,
+            /* угол наклона градиента */
+            #09234E 10%,
+            /* синий внизу справа */
+            #000000 75%,
+            /* серый промежуточный */
+            #000000 90%
+            /* черный сверху слева */
+        );
+    margin: auto;
+    position: fixed;
+
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+/* Контейнер, который ограничивает ширину содержимого */
+.header-zam {
+    width: 90%;
+    /* Ширина содержимого */
+    max-width: 1600px;
+    /* Максимальная ширина */
+    margin: 0 auto;
+    /* Центрирование */
+
+}
+
+/* Основной контейнер хедера с использованием Flexbox */
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    /* Размещает элементы по краям */
+    align-items: center;
+    /* Выравнивает по вертикали */
+}
+
+/* Стили для логотипа */
+.header-menu>img {
+    height: 30px;
+    /* Размер логотипа */
+}
+
+/* Стили для навигационного меню */
+.header-comp ul {
+    list-style: none;
+    /* Убирает маркеры списка */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    /* Пространство между пунктами меню */
+    margin: 0;
+    padding: 0;
+}
+
+.header-comp li {
+    display: flex;
+    align-items: center;
+}
+
+.header-comp a {
+    text-decoration: none;
+    /* Убирает подчеркивание */
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    /* Плавный переход цвета */
+}
+
+.header-comp a:hover {
+    color: #007bff;
+    /* Цвет при наведении */
+}
+
+.header-comp li img {
+    height: 20px;
+    /* Размер иконки огня */
+    margin-left: 5px;
+    /* Отступ от текста "Акции" */
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    background-color: rgb(245, 245, 249);
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-react {
+    font-size: 25px;
+}
+
+/* Стили для блока с иконками поиска, пользователя и корзины */
+
+/* Адаптивность для небольших экранов */
+@media (max-width: 768px) {
+    .header-menu {
+        flex-direction: column;
+        /* Элементы будут располагаться друг под другом */
+        gap: 20px;
+    }
+
+    .header-comp ul {
+        flex-wrap: wrap;
+        /* Разрешает перенос пунктов на новую строку */
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.header-comp ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-comp li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* Важно для позиционирования выпадающего меню */
+}
+
+/* ... Остальные стили для ссылок ... */
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 5px 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #333;
+}

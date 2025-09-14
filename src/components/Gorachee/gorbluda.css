@@ -1,0 +1,130 @@
+.gorbluda {
+    padding: 40px;
+    background: linear-gradient(to right, #09234E, #000000 100%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.gorbluda-title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+.gorbluda-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gorbluda-card {
+
+    width: 220px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.gorbluda-card:hover {
+    transform: translateY(-5px);
+}
+
+.gorbluda-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.gorbluda-name {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.gorbluda-weight {
+    font-size: 14px;
+    color: white;
+    width: 40px;
+    height: 20px;
+    background-color: #797979;
+    opacity: 90%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.gorbluda-desc {
+    font-size: 14px;
+    color: #ccc;
+    flex-grow: 1;
+    margin: 8px 0;
+}
+
+.gorbluda-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.gorbluda-price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.gorbluda-types {
+    font-size: 12px;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.gorbluda-btn {
+    background: transparent;
+    border: 2px solid rgba(251, 209, 62, 1);
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, transform 0.12s;
+}
+
+.gorbluda-btn:hover {
+    background: rgb(66, 51, 1);
+    transform: translateY(-2px);
+}
+
+.basket-icon {
+    width: 20px;
+    height: 20px;
+    color: rgba(251, 209, 62, 1);
+}
+.gorbluda-sort {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sort-label {
+    color: #b0b0b0;
+    letter-spacing: 1px;
+}
+
+.sort-value {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
