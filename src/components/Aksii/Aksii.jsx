@@ -104,7 +104,7 @@
 import React, { useState, useContext } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../contex/CartContex"; // ⚡ коштук
+import { CartContext } from "../../contex/CartContex"; // подключаем контекст
 
 import pizza1 from "../../assets/pizza1.jpg";
 import pizza2 from "../../assets/pizza2.jpg";
@@ -114,21 +114,55 @@ import pizza4 from "../../assets/pizza4.jpg";
 import "./aksii.css";
 
 const aktsiiData = [
-  { id: 1, name: "Маргарита", weight: "400 г", desc: "Томаты, моцарелла, базилик", price: 360, oldPrice: 450, img: pizza1 },
-  { id: 2, name: "Пепперони", weight: "450 г", desc: "Томатный соус, моцарелла, пепперони", price: 480, oldPrice: 600, img: pizza2 },
-  { id: 3, name: "Четыре сыра", weight: "420 г", desc: "Моцарелла, пармезан, дор блю, чеддер", price: 525, oldPrice: 750, img: pizza3 },
-  { id: 4, name: "Грибная", weight: "410 г", desc: "Сливочный соус, моцарелла, шампиньоны", price: 450, oldPrice: 600, img: pizza4 },
+  {
+    id: 1,
+    name: "Маргарита",
+    weight: "400 г",
+    desc: "Томаты, моцарелла, базилик",
+    price: 360,
+    oldPrice: 450,
+    img: pizza1,
+  },
+  {
+    id: 2,
+    name: "Пепперони",
+    weight: "450 г",
+    desc: "Томатный соус, моцарелла, пепперони",
+    price: 480,
+    oldPrice: 600,
+    img: pizza2,
+  },
+  {
+    id: 3,
+    name: "Четыре сыра",
+    weight: "420 г",
+    desc: "Моцарелла, пармезан, дор блю, чеддер",
+    price: 525,
+    oldPrice: 750,
+    img: pizza3,
+  },
+  {
+    id: 4,
+    name: "Грибная",
+    weight: "410 г",
+    desc: "Сливочный соус, моцарелла, шампиньоны",
+    price: 450,
+    oldPrice: 600,
+    img: pizza4,
+  },
 ];
 
 function Aksii() {
   const [sortOrder, setSortOrder] = useState("asc");
-  const { addToCart } = useContext(CartContext); // ✅ колдонобуз
+  const { addToCart } = useContext(CartContext); // берём функцию добавления в корзину
 
-  const sortedAksii = [...aktsiiData].sort((a, b) =>
-    sortOrder === "asc" ? a.price - b.price : b.price - a.price
-  );
+  const sortedAksii = [...aktsiiData].sort((a, b) => {
+    return sortOrder === "asc" ? a.price - b.price : b.price - a.price;
+  });
 
-  const toggleSort = () => setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+  const toggleSort = () => {
+    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+  };
 
   return (
     <div className="gorbluda">
@@ -152,16 +186,23 @@ function Aksii() {
             <h2 className="gorbluda-name">{item.name}</h2>
             <p className="gorbluda-weight">{item.weight}</p>
             <p className="gorbluda-desc">{item.desc}</p>
-
             <div className="gorbluda-footer">
               <div className="price-container">
                 <span className="gorbluda-price-old">{item.oldPrice} ₽</span>
                 <span className="gorbluda-price">{item.price} ₽</span>
               </div>
-
               <button
                 className="gorbluda-btn"
-                onClick={() => addToCart(item)} // ✅ корзинага кошуу
+                onClick={() =>
+                  addToCart({
+                    id: item.id,
+                    title: item.name,
+                    price: item.price,
+                    image: item.img,
+                    weight: item.weight,
+                    quantity: 1,
+                  })
+                }
               >
                 <LiaShoppingBasketSolid className="basket-icon" />
               </button>
