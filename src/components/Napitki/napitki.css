@@ -107,3 +107,19 @@
     height: 20px;
     color: rgba(251, 209, 62, 1);
 }
+
+.navi {
+    display: flex;
+    gap: 4px;
+}
+.navi a{
+    color: white;
+    list-style: none;
+    line-height: none ;
+   
+    
+}
+.niva{
+    color: #9EA2AA;
+}
+

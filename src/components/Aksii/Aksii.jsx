@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 // Замените эти пути на реальные пути к вашим изображениям пицц
 import pizza1 from "../../assets/pizza1.jpg";
@@ -63,6 +64,10 @@ function Aksii() {
   return (
     <div className="gorbluda">
       <h1 className="gorbluda-title">Акции</h1>
+<div className="navi">
+              <Link to="/">Главная </Link>
+              <p className="niva">/ Акции</p>
+            </div>
       <div className="gorbluda-sort" onClick={toggleSort}>
         <span className="sort-label">СОРТИРОВАТЬ:</span>
         <span className="sort-value">

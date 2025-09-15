@@ -1,21 +1,43 @@
-.contact-container {
+.cw {
+  max-width: 1600px;
+  margin: auto;
+  padding: 40px;
+  color: white;
+  background: linear-gradient(to right, #09234e, #000000 100%);
+  overflow: hidden;
+  height: 700px;
+}
+
+.ct {
+  font-size: 56px;
+  margin-top: 80px;
+  font-weight: 600;
+  width: 50%;
+}
+
+.cb {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.cc {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1600px; /* как у тебя экран */
-  margin: 0 auto;
-  padding: 40px;
-  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: visible;
 }
 
-.contact-form {
+.cf {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: #9EA2AA;
+  margin-top: 50px;
 }
 
-.contact-form textarea {
+.cf textarea {
   min-height: 120px;
   padding: 10px;
   font-size: 16px;
@@ -23,57 +45,79 @@
   border: none;
 }
 
-.contact-form input {
+.cf input {
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #ccc;
   outline: none;
   transition: 0.3s;
+  width: 450px;
+  border: none;
 }
 
-.contact-form input.valid {
-  border: 2px solid green;
+.cf input.ok {
+  border: 3px solid rgb(14, 216, 14);
 }
 
-.error {
+.err {
   color: red;
   font-size: 14px;
 }
 
-.contact-form button {
+.cf button {
   padding: 12px;
   font-size: 16px;
   cursor: pointer;
-  border: none;
-  background: #222;
-  color: white;
+  border: 2px solid #fbd13e;
+  background: none;
   transition: 0.3s;
+  width: 250px;
+  color: #fbd13e;
 }
 
-.contact-form button:hover {
+.cf button:hover {
   background: #444;
 }
 
-.contact-form button.sent {
+.cf button.sent {
   background: green;
   color: white;
 }
 
-.contact-images {
+.ci {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 30px;
+  gap: 40px;
+  position: relative;
 }
 
-.contact-images img {
-  width: 350px;
-  transform: rotate(-5deg);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.ci img {
+  width: 500px; /* увеличил размер */
+  transform: rotate(-45deg); /* угол меньше, чтобы не обрезало */
+  
+  position: relative;
+  right: -200px;
+  margin-top: -50px;/* опустил вниз, чтобы торчал хвост */
 }
 
-.contact-images img.img2 {
-  transform: rotate(5deg);
+.ci .i2 {
+  transform: rotate(-45deg);
+  right: 300px;
+  bottom: 150px; /* ещё ниже */
+}
+
+.navi {
+    display: flex;
+    gap: 4px;
+}
+.navi a{
+    color: white;
+    list-style: none;
+    line-height: none ;
+   
+    
+}
+.niva{
+    color: #9EA2AA;
 }

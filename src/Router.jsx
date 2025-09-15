@@ -19,6 +19,7 @@ import Vipech from "./components/Vipech/Vipech";
 import Napitki from "./components/Napitki/Napitki";
 
 
+
 export const mypoland = createBrowserRouter([
     {
         path: '/',
@@ -52,7 +53,7 @@ export const mypoland = createBrowserRouter([
                 element:<Deserts/>
             },
             {
-                path:'Otzyv',
+                path:'Otzuv',
                 element:<Otzuv/>
             },
              {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 import gorbluda1 from "../../assets/gorbluda1.png";
 import gorbluda2 from "../../assets/gorbluda2.png";
@@ -77,7 +78,10 @@ function Gorbluda() {
   return (
     <div className="gorbluda">
       <h1 className="gorbluda-title">Горячие блюда</h1>
-
+      <div className="navi">
+        <Link to="/">Главная </Link>
+        <p className="niva">/ Горячие блюда</p>
+      </div>
       {/* 🔹 Блок сортировки */}
       <div className="gorbluda-sort" onClick={toggleSort}>
         <span className="sort-label">СОРТИРОВАТЬ:</span>

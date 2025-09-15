@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 // Замените эти пути на реальные пути к вашим изображениям
 import buterbrod1 from "../../assets/Buterbrody1.jpg"; 
@@ -77,6 +78,10 @@ function Buter() {
   return (
     <div className="gorbluda">
       <h1 className="gorbluda-title">Бутерброды</h1>
+      <div className="navi">
+              <Link to="/">Главная </Link>
+              <p className="niva">/ Бутерброды</p>
+            </div>
 
       {/* Блок сортировки */}
       <div className="gorbluda-sort" onClick={toggleSort}>

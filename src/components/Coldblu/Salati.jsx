@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 // Импортируйте изображения для салатов
 import salad1 from "../../assets/salad1.jpg";
@@ -77,6 +78,10 @@ function Salaty() {
   return (
     <div className="gorbluda">
       <h1 className="gorbluda-title">Салаты</h1>
+      <div className="navi">
+              <Link to="/">Главная </Link>
+              <p className="niva">/ Салаты</p>
+            </div>
 
       {/* Блок сортировки */}
       <div className="gorbluda-sort" onClick={toggleSort}>

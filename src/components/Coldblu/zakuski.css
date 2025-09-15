@@ -129,3 +129,17 @@
     font-weight: bold;
 }
 
+.navi {
+    display: flex;
+    gap: 4px;
+}
+.navi a{
+    color: white;
+    list-style: none;
+    line-height: none ;
+   
+    
+}
+.niva{
+    color: #9EA2AA;
+}

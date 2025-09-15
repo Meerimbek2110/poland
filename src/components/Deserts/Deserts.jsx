@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 // Короткие имена файлов
 import des1 from "../../assets/des1.jpg";
@@ -77,6 +78,10 @@ function Deserts() {
   return (
     <div className="gorbluda">
       <h1 className="gorbluda-title">Десерты</h1>
+      <div className="navi">
+              <Link to="/">Главная </Link>
+              <p className="niva">/ Десерты</p>
+            </div>
 
       {/* Блок сортировки */}
       <div className="gorbluda-sort" onClick={toggleSort}>
