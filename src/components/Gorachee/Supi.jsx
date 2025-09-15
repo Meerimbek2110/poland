@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 import sup1 from "../../assets/sup.jpg";
 import sup2 from "../../assets/supi2.jpg";
@@ -75,7 +76,11 @@ function Supi() {
 
   return (
     <div className="gorbluda">
-      <h1 className="gorbluda-title">Горячие блюда</h1>
+      <h1 className="gorbluda-title">Супы</h1>
+      <div className="navi">
+              <Link to="/">Главная </Link>
+              <p className="niva">/ Супы</p>
+            </div>
 
       {/* 🔹 Блок сортировки */}
       <div className="gorbluda-sort" onClick={toggleSort}>

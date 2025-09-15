@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaShoppingBasketSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 // Короткие имена файлов, как вы и просили
 import vipech1 from "../../assets/vipech1.jpg";
@@ -77,6 +78,10 @@ function Vipech() {
   return (
     <div className="gorbluda">
       <h1 className="gorbluda-title">Свежая выпечка</h1>
+      <div className="navi">
+                    <Link to="/">Главная </Link>
+                    <p className="niva">/ Свежая выпечка</p>
+                  </div>
 
       {/* Блок сортировки */}
       <div className="gorbluda-sort" onClick={toggleSort}>

@@ -1,0 +1,84 @@
+.ow {
+  padding: 40px;
+  color: white;
+  background: #081b33;
+  min-height: 100vh;
+}
+
+.ot {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.navi {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.olist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.orev {
+  background: #0d2747;
+  border-radius: 10px;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.orev:hover {
+  background: #12325a;
+}
+
+.otop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle:hover {
+  transform: scale(1.2);
+}
+
+/* плавный аккордеон */
+.msgWrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.msgWrap.open {
+  max-height: 500px; /* достаточно большое значение */
+  opacity: 1;
+}
+
+.msg {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}

@@ -16,7 +16,7 @@ function Footer() {
               <a href="">Доставка</a>
             </li>
             <li>
-              <a href="">Оплата</a>
+              <a href="Otzuv">Отзывы</a>
             </li>
             <li>
               <a href="">Кoнтакты</a>
