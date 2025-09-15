@@ -104,7 +104,7 @@ function Cart() {
 
             <div className="cart-summary">
               <div className="promo-code">
-                <input type="text" placeholder="Применить промокод" />
+                <input type="text" placeholder="Применить промокод." />
                 <button>Применить</button>
               </div>
               <div className="total-checkout">
